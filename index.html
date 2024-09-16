@@ -35,7 +35,37 @@
             <button disabled>EMPEZAR</button>
         </section>
 
-
+        <script>
+            function actualizarContador() {
+                // Fecha de hoy
+                const hoy = new Date();
+                
+                // Fecha de Navidad
+                const navidad = new Date(hoy.getFullYear(), 11, 25); // Mes 11 = diciembre (indexado desde 0)
+        
+                // Si ya ha pasado el 25 de diciembre de este año, contamos para la navidad del próximo año
+                if (hoy > navidad) {
+                    navidad.setFullYear(navidad.getFullYear() + 1);
+                }
+        
+                // Cálculo de la diferencia en milisegundos
+                const diferencia = navidad - hoy;
+        
+                // Convertimos la diferencia a días, horas, minutos y segundos
+                const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horasRestantes = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
+        
+                // Actualizamos el contenido del contador
+                document.getElementById('contador').innerText = 
+                    `${diasRestantes} días, ${horasRestantes} horas, ${minutosRestantes} minutos, ${segundosRestantes} segundos`;
+            }
+        
+            // Llamamos a la función cada segundo
+            setInterval(actualizarContador, 1000);
+        </script>
+        
 
 
     </body>

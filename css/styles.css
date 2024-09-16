@@ -1,18 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f6f5;
+    color: #333;
 }
 
 header {
-    background-color: #00aeff52;
+    background: #58dffd;
     color: white;
     padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    width: 100px; /* Ajusta el tamaño según tu preferencia */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 80px; 
+    height: auto; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -23,35 +37,100 @@ header {
     padding: 0;
 }
 
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    width: 100%; /* Asegura que ocupe el 100% del ancho */
-    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
-} 
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+.menu li a {
+    color: rgb(6, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-nav button {
-    margin-left: 10px;
-    padding: 5px 10px;
+.menu li a:hover {
+    color: #ffcc00;
+}
+
+button {
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #e94e2f;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 section {
-    padding: 2rem;
+    padding: 4rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+}
+
+#contador {
+    font-weight: bold;
+    color: #00aeff;
 }
 
 @media screen and (max-width: 768px) {
-    /* Estilos para tablet */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    /* Estilos para móviles */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }
