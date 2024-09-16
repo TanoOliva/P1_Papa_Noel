@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Viaje de Papá Noel</title>
-        <meta name="papa noel" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-
 
     <body>
         <header>
             <nav>
                 <div class="logo">
-                    <img src="images/PapaNoel.png" alt="Logo del Sitio"></div>
+                    <img src="images/gorro.webp" alt="Logo del Sitio">
+                </div>
                 <ul class="menu">
                     <li><a href="home.html">Home</a></li>
                     <li><a href="papanoel.html">Papá Noel</a></li>
                     <li><a href="cartas.html">Las cartas</a></li>
                     <li><a href="envia.html">Envia tu carta</a></li>
                     <li><a href="juega.html">¡Juega!</a></li>
-                    
                 </ul>
-                <button disabled>Sign in</button>
-                <button disabled>Register</button>
+                <div class="buttons-container">
+                    <button disabled>Sign in</button>
+                    <button disabled>Register</button>
+                </div>
             </nav>
         </header>
 
@@ -37,37 +36,24 @@
 
         <script>
             function actualizarContador() {
-                // Fecha de hoy
                 const hoy = new Date();
-                
-                // Fecha de Navidad
-                const navidad = new Date(hoy.getFullYear(), 11, 25); // Mes 11 = diciembre (indexado desde 0)
-        
-                // Si ya ha pasado el 25 de diciembre de este año, contamos para la navidad del próximo año
+                const navidad = new Date(hoy.getFullYear(), 11, 25);
+
                 if (hoy > navidad) {
                     navidad.setFullYear(navidad.getFullYear() + 1);
                 }
-        
-                // Cálculo de la diferencia en milisegundos
+
                 const diferencia = navidad - hoy;
-        
-                // Convertimos la diferencia a días, horas, minutos y segundos
                 const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
                 const horasRestantes = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
                 const segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
-        
-                // Actualizamos el contenido del contador
+
                 document.getElementById('contador').innerText = 
                     `${diasRestantes} días, ${horasRestantes} horas, ${minutosRestantes} minutos, ${segundosRestantes} segundos`;
             }
-        
-            // Llamamos a la función cada segundo
+
             setInterval(actualizarContador, 1000);
         </script>
-        
-
-
     </body>
-
 </html>
