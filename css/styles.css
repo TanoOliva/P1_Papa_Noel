@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00aeff52;
+    color: white;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño según tu preferencia */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%; /* Asegura que ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+} 
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+section {
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para tablet */
+}
+
+@media screen and (max-width: 600px) {
+    /* Estilos para móviles */
+}
