@@ -11,14 +11,13 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 h3 {
     color: #333;
     margin-bottom: 20px;
 }
 
 form {
-    display:block;
+    display: flex;
     flex-direction: column;
     gap: 15px;
 }
@@ -32,21 +31,17 @@ input[type="text"],
 input[type="number"],
 textarea,
 input[type="file"] {
-    width: 90%;
+    width: 100%;  /* Ancho consistente */
+    max-width: 500px; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 textarea {
-    width: 70%; 
-    max-width: 500px; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     resize: none;
-    margin: 0 auto;  
-    display: block;  
+    margin: 0 auto;
+    display: block;
 }
 
 button {
@@ -62,8 +57,8 @@ button {
 
 button:hover {
     background-color: #d94c26;
+    color: white;
 }
-
 
 .menu {
     list-style: none;
@@ -95,5 +90,5 @@ footer .menu {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 1px;
+    padding-top: 1rem; /* Ajuste en el padding */
 }

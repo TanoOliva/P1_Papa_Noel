@@ -11,8 +11,6 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .menu {
     list-style: none;
     display: flex;
@@ -25,6 +23,12 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #ffcc00;
 }
 
 .intro {
@@ -69,7 +73,7 @@ header {
     margin: 2rem auto;
     width: 80%;
     max-width: 1200px;
-    border-radius: 10px;;
+    border-radius: 10px;
 }
 
 .curiosidad {
@@ -102,7 +106,6 @@ header {
     color: #333;
 }
 
-
 footer {
     text-align: center;
     padding: 1rem;
@@ -125,5 +128,11 @@ footer .menu {
 @media screen and (max-width: 768px) {
     .curiosidades-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .intro, .historia, .curiosidades {
+        margin: 10px auto;
+        padding: 1rem;
+        max-width: 90%;
     }
 }

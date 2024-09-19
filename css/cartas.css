@@ -13,7 +13,6 @@ header {
 
 h2 {
     text-align: center;
-    justify-content: center;
 }
 
 .menu {
@@ -57,7 +56,7 @@ footer .menu {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .carta {
