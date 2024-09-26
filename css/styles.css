@@ -34,7 +34,7 @@ header {
 }
 
 .logo img {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
@@ -125,7 +125,7 @@ p {
 
 @media screen and (max-width: 768px) {
     .logo img {
-        width: 300px;
+        width: 200px;
         height: auto;
     }
 

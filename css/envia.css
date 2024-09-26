@@ -80,15 +80,71 @@ button:hover {
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
     background-color: #710b0b;
     color: white;
+    padding: 10px 0;
+    font-size: 0.8rem;
+    margin-top: 0px;
+    
+    
 }
 
-footer .menu {
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 170px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-menu {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding-top: 1rem; /* Ajuste en el padding */
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    display: inline; /* Asegura que los elementos de la lista estén en línea */
+}
+
+.footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer-contact {
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 5px 0;
+    background-color: #5a0a0a;
 }
