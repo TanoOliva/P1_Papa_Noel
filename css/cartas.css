@@ -135,7 +135,7 @@ footer {
 }
 
 .footer-menu li {
-    display: inline; /* Asegura que los elementos de la lista estén en línea */
+    display: inline; 
 }
 
 .footer-menu li a {

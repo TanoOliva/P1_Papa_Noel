@@ -80,17 +80,18 @@ header {
 
 .word-search-container {
     display: flex;
-    align-items: flex-start; /* Alinear al principio */
+    align-items: flex-start; 
     margin-top: 20px;
 }
 
 .image-container {
     margin-right: 20px;
-    margin-top: 20px; /* Espacio entre la sopa de letras y la lista de palabras */
+    margin-top: 20px; 
+
 }
 
 .sopa-image {
-    width: 400px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 400px; 
     height: auto;
 }
 
@@ -112,14 +113,14 @@ h2 {
 
 
 .solucion-container {
-    display: none; /* Oculto por defecto */
+    display: none; 
     margin-top: 20px;
     text-align: center;
 }
 
 
 .sopa-resuelta-image {
-    width: 300px; /* Ajusta el tamaño de la imagen resuelta */
+    width: 300px; 
     height: auto;
 }
 
