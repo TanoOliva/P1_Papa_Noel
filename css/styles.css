@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    background-image: url('/images/fondo.jpg');
-    background-size: cover; /* Ajusta automáticamente la imagen para cubrir todo el área */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen */
+    background-image: url('/images/fondo3.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ header {
     margin-bottom: 30px;
 }
 
-.nav-container {
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,7 @@ header {
     height: auto;
 }
 
-.vacaciones {
+.gif {
     position: relative;
     bottom: 0;
     width: 300px; 
@@ -45,7 +45,7 @@ header {
 }
 
 
-.menu {
+.lista {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -53,18 +53,14 @@ header {
     padding: 0;
 }
 
-.menu li a {
-    color: rgb(252, 252, 252);
+.lista li a {
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
-.menu li a:hover {
-    color: #ffcc00;
-}
-
-.buttons-container {
+.botones-menu {
     display: flex;
     gap: 10px;
     margin-top: 10px;
@@ -79,11 +75,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button:disabled {
-    background-color: #d9e4e9;
-    cursor: not-allowed;
 }
 
 section {
@@ -115,33 +106,30 @@ p {
 }
 
 
-
-
-
 @media screen and (max-width: 768px) {
     .logo img {
         width: 200px;
         height: auto;
     }
 
-    .menu {
+    .lista {
         font-size: 0.9rem;
     }
 
     button {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
-    .footer-content {
+    .pie-contacto {
         flex-direction: column;
     }
 
-    .footer-menu {
+    .pie-menu {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-logo {
+    .pie-logo {
         margin-bottom: 10px;
     }
 
@@ -156,7 +144,7 @@ p {
         align-items: center;
     }
 
-    .menu {
+    .lista {
         font-size: 0.7rem;
     }
 
@@ -174,7 +162,7 @@ p {
     }
 
     button {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
 
@@ -193,7 +181,7 @@ footer {
     
 }
 
-.footer-content {
+.pie {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,24 +190,24 @@ footer {
     padding: 10px;
 }
 
-.footer-logo {
+.pie-logo {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.footer-logo img {
+.pie-logo img {
     width: 170px;
     height: auto;
     margin-right: 10px;
 }
 
-.footer-menu {
+.pie-menu {
     display: flex;
     justify-content: center;
 }
 
-.footer-menu ul {
+.pie-menu ul {
     list-style: none;
     display: flex;
     gap: 15px;
@@ -227,26 +215,26 @@ footer {
     margin: 0;
 }
 
-.footer-menu li {
-    display: inline; /* Asegura que los elementos de la lista estén en línea */
+.pie-menu li {
+    display: inline;
 }
 
-.footer-menu li a {
+.pie-menu li a {
     color: white;
     text-decoration: none;
     font-weight: normal;
 }
 
-.footer-contact {
+.pie-contacto {
     text-align: center;
     font-size: 0.5rem;
 }
 
-.footer-contact p {
+.pie-contacto p {
     margin: 5px 0;
 }
 
-.footer-bottom {
+.pie-boton {
     text-align: center;
     font-size: 0.6rem;
     padding: 5px 0;

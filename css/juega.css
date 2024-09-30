@@ -44,10 +44,10 @@ header {
 }
 
 .game-title {
-    margin-bottom: 20px; /* Espacio debajo del título */
-    font-size: 2rem; /* Tamaño del texto */
-    color: #333; /* Color del texto */
-    text-align: center; /* Centra el texto */
+    margin-bottom: 20px;
+    font-size: 2rem; 
+    color: #333; 
+    text-align: center; 
 }
 
 .game-container {
@@ -62,7 +62,7 @@ header {
 }
 
 .acertijo-image {
-    width: 70%; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 50%; 
     height: auto;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 .sopa-image {
-    width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 400px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto;
 }
 
@@ -106,7 +106,22 @@ header {
     transition: background-color 0.3s;
 }
 
+h2 {
+ margin-top: 100px;
+}
 
+
+.solucion-container {
+    display: none; /* Oculto por defecto */
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.sopa-resuelta-image {
+    width: 300px; /* Ajusta el tamaño de la imagen resuelta */
+    height: auto;
+}
 
 
 

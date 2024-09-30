@@ -12,7 +12,7 @@ header {
     margin-bottom: 30px;
 }
 
-.nav-container {
+.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@ header {
 }
 
 
-.menu {
+.lista {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -32,17 +32,12 @@ header {
     padding: 0;
 }
 
-.menu li a {
-    color: rgb(252, 252, 252);
+.lista li a {
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
-
-.menu li a:hover {
-    color: #ffcc00;
-}
-
 
 .intro {
     text-align: center;
@@ -53,14 +48,9 @@ header {
     border-radius: 10px;
 }
 
-.interactive {
-    width: 350px;
+.gif{
+    width: 500px;
     margin-top: 20px;
-    transition: transform 0.3s ease;
-}
-
-.interactive:hover {
-    transform: scale(1.1);
 }
 
 .historia, .curiosidades {
@@ -103,9 +93,11 @@ header {
     gap: 20px;
 }
 
-.curiosidad:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+.imagen-saco {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 .curiosidad h3 {
@@ -139,6 +131,11 @@ header {
         margin: 10px auto;
         padding: 1rem;
         max-width: 90%;
+    }
+
+    .gif{
+        width: 400px;
+        margin-top: 20px;
     }
 }
 

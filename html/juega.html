@@ -34,7 +34,7 @@
     </div>
 
     <div class="game-container">
-        <h1 class="game-title">¡Encuentra las Palabras!</h1>
+        <h2 class="game-title">¡Encuentra las Palabras!</h2>
     
         <div class="word-search-container">
             <div class="image-container">
@@ -42,7 +42,7 @@
             </div>
             
             <div class="word-list-container">
-                <h2>Palabras a buscar:</h2>
+                <h3>Palabras a buscar:</h3>
                 <ul class="word-list">
                     <li>REGALO</li>
                     <li>ÁRBOL</li>
@@ -56,9 +56,15 @@
                     <li>RENOS</li>
 
                 </ul>
-                <button class="check-button" onclick="checkWords()">Verificar</button>
+                <button class="check-button" onclick="document.getElementById('solucion').style.display='block'">Verificar</button>
             </div>
         </div>
+
+        <div id="solucion" class="solucion-container">
+            <h4>Sopa de Letras Resuelta</h4>
+            <img src="/images/sopa2.jpeg" alt="Sopa resuelta" class="sopa-resuelta-image">
+        </div>
+
     </div>
 
 
