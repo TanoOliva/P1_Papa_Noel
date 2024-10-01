@@ -1,7 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f5;
-    color: #333;
+    color: #000000;
+    background: #f4f6f5 url('/images/fondo3.jpg') center/cover no-repeat;
 }
 
 header {
@@ -39,14 +40,10 @@ header {
     transition: color 0.3s ease;
 }
 
-.menu li a:hover {
-    color: #ffcc00;
-}
-
 .game-title {
     margin-bottom: 20px;
     font-size: 2rem; 
-    color: #333; 
+    color: #000000; 
     text-align: center; 
 }
 

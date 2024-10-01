@@ -1,7 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f5;
-    color: #333;
+    color: #000000;
+   
 }
 
 header {
@@ -38,17 +39,10 @@ header {
     transition: color 0.3s ease;
 }
 
-.menu li a:hover {
-    color: #ffcc00;
-}
-
-
 
 h2 {
     text-align: center;
 }
-
-
 
 footer {
     text-align: center;

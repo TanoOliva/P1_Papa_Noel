@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f5;
+    background: #f4f6f5 url('/images/fondo3.jpg') center/cover no-repeat;
     color: #333;
     
 }
@@ -40,10 +40,6 @@ header {
     transition: color 0.3s ease;
 }
 
-.menu li a:hover {
-    color: #ffcc00;
-}
-
 .buttons-container {
     display: flex;
     gap: 10px;
@@ -52,7 +48,6 @@ header {
 
 
 .enviar {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

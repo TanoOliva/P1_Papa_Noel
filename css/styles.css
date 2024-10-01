@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    background-image: url('/images/fondo3.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center; 
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f6f5;
+    background: #f4f6f5 url('/images/fondo3.jpg') center/cover no-repeat;
     color: #333;
 }
 
@@ -16,7 +12,6 @@ body {
 
 header {
     background: #25d4cf;
-    color: white;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
@@ -24,14 +19,31 @@ header {
 
 .menu {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .logo img {
-    width: 200px;
-    height: auto;
+    width: 120px;
 }
+
+.lista {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.lista li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
 
 .gif {
     position: relative;
@@ -40,37 +52,20 @@ header {
     height: auto;
     z-index: 2;
     transform: translateX(-16%);
-    top: 46px;
-    
+    top: 44px;
 }
 
-
-.lista {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 10px 0;
-    padding: 0;
-}
-
-.lista li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
 
 .botones-menu {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
 button {
+    padding: 8px 16px;
     border: none;
-    color: rgb(0, 0, 0);
-    padding: 5px 20px;
-    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -78,14 +73,13 @@ button {
 }
 
 section {
-    padding: 2rem;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin: auto;
-    width: 80%;
-    max-width: 900px;
+    margin: 20px auto;
+    padding: 2rem;
     border-radius: 10px;
+    max-width: 850px;
 }
 
 h1 {
@@ -96,78 +90,12 @@ h1 {
 
 p {
     font-size: 1.5em;
-    margin-bottom: 2rem;
 }
 
 #contador {
     font-weight: bold;
-    font-size: 1.5rem;
     color: #0c97c6;
 }
-
-
-@media screen and (max-width: 768px) {
-    .logo img {
-        width: 200px;
-        height: auto;
-    }
-
-    .lista {
-        font-size: 0.9rem;
-    }
-
-    button {
-        font-size: 0.7rem;
-    }
-
-    .pie-contacto {
-        flex-direction: column;
-    }
-
-    .pie-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pie-logo {
-        margin-bottom: 10px;
-    }
-
-
-
-
-}
-
-@media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .lista {
-        font-size: 0.7rem;
-    }
-
-    nav button {
-        width: 50%;
-        margin-top: 5px;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    #contador {
-        font-size: 1.2rem;
-    }
-
-    button {
-        font-size: 0.7rem;
-    }
-
-
-}
-
 
 
 
@@ -176,24 +104,12 @@ footer {
     color: white;
     padding: 10px 0;
     font-size: 0.8rem;
-    margin-top: 0px;
-    
-    
+    text-align: center;
 }
 
 .pie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px;
-}
-
-.pie-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
 }
 
 .pie-logo img {
@@ -202,41 +118,109 @@ footer {
     margin-right: 10px;
 }
 
-.pie-menu {
-    display: flex;
-    justify-content: center;
-}
-
 .pie-menu ul {
-    list-style: none;
     display: flex;
     gap: 15px;
+    list-style: none;
+    justify-content: center;
     padding: 0;
-    margin: 0;
-}
-
-.pie-menu li {
-    display: inline;
 }
 
 .pie-menu li a {
     color: white;
     text-decoration: none;
     font-weight: normal;
-}
-
-.pie-contacto {
-    text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .pie-contacto p {
     margin: 5px 0;
+    font-size: 0.7rem;
 }
 
 .pie-boton {
-    text-align: center;
-    font-size: 0.6rem;
-    padding: 5px 0;
     background-color: #5a0a0a;
+    padding: 10px 0;
+    font-size: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .lista li a {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    .botones-menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    section {
+        padding: 1.5rem;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin: 10px 0;
+    }
+
+    .lista li a {
+        font-size: 0.7rem;
+    }
+
+    .botones-menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+
 }
