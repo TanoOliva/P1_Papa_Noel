@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f5;
@@ -17,7 +19,7 @@ header {
     display: flex;
     flex-direction: center;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .logo img {
@@ -116,11 +118,11 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    
     .menu {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 10px;
     }
 
     .logo {
@@ -129,6 +131,7 @@ header {
 
     .logo img {
         width: 200px;
+        margin-left: 50px;
     }
 
     .lista {
@@ -141,22 +144,46 @@ header {
         font-size: 0.9rem;
         letter-spacing: 0.5px;
     }
-    
-    
-    .curiosidades-caja {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    .imagen {
+        max-width: 50%;
     }
 
-    .intro, .historia, .curiosidades {
-        margin: 10px auto;
-        padding: 1rem;
-        max-width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
     }
 
-    .gif{
-        width: 350px;
-        margin-top: 20px;
+    .logo {
+        order: -1;
     }
+
+    .logo img {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .lista li a {
+        font-size: 0.9rem;
+    }
+
+    .imagen {
+        max-width: 50%;
+    }
+
 }
 
 

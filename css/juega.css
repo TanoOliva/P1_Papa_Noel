@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f5;
@@ -17,7 +19,7 @@ header {
     display: flex;
     flex-direction: center;
     align-items: center;
-    gap: 30px;
+    gap: 80px;
 }
 
 .logo img {
@@ -47,7 +49,7 @@ header {
 
 .titulo-juego {
     margin-bottom: 20px;
-    font-size: 2rem; 
+    font-size: 1.7rem; 
     color: #000000; 
     text-align: center; 
 }
@@ -64,7 +66,7 @@ header {
 }
 
 .acertijo-image {
-    width: 50%; 
+    width: 59%; 
     height: auto;
 }
 
@@ -82,18 +84,18 @@ header {
 
 .sopa {
     display: flex;
-    align-items: flex-start; 
+ 
     margin-top: 20px;
 }
 
 .imagen-juego {
-    margin-right: 20px;
+    margin-right: 0px;
     margin-top: 20px; 
 
 }
 
 .sopa-image {
-    width: 400px; 
+    width: 59%; 
     height: auto;
 }
 
@@ -122,10 +124,112 @@ h2 {
 
 
 .sopa-resuelta-image {
-    width: 300px; 
+    width: 200px; 
     height: auto;
 }
 
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .lista li a {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    .sopa-image {
+        width: 300px; 
+        height: auto;
+    }
+
+    .sopa-resuelta-image {
+        width: 250px; 
+        height: auto;
+    }
+
+    .lista-sopa {
+        font-size: 0.8rem;
+    }
+
+    .imagen-juego {
+        margin-right: 15px;
+        margin-top: 15px; 
+    
+    }
+    
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .lista li a {
+        font-size: 0.9rem;
+    }
+
+    .sopa-image {
+        width: 240px; 
+        height: auto;
+    }
+
+    .sopa-resuelta-image {
+        width: 220px; 
+        height: auto;
+    }
+
+    .lista-sopa {
+        font-size: 0.7rem;
+    }
+
+    .imagen-juego {
+        margin-right: 15px;
+        margin-top: 15px; 
+    
+    }
+
+}
 
 
 footer {
@@ -133,67 +237,42 @@ footer {
     color: white;
     padding: 10px 0;
     font-size: 0.8rem;
-    margin-top: 0px;
-    
-    
+    text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pie {
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.footer-logo img {
+.pie-logo img {
     width: 170px;
     height: auto;
     margin-right: 10px;
 }
 
-.footer-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-menu ul {
-    list-style: none;
+.pie-menu ul {
     display: flex;
     gap: 15px;
+    list-style: none;
+    justify-content: center;
     padding: 0;
-    margin: 0;
 }
 
-.footer-menu li {
-    display: inline; 
-}
-
-.footer-menu li a {
+.pie-menu li a {
     color: white;
     text-decoration: none;
     font-weight: normal;
+    font-size: 0.8rem;
 }
 
-.footer-contact {
-    text-align: center;
-    font-size: 0.5rem;
-}
-
-.footer-contact p {
+.pie-contacto p {
     margin: 5px 0;
+    font-size: 0.7rem;
 }
 
-.footer-bottom {
-    text-align: center;
-    font-size: 0.6rem;
-    padding: 5px 0;
+.pie-boton {
     background-color: #5a0a0a;
+    padding: 10px 0;
+    font-size: 0.5rem;
 }

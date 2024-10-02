@@ -77,7 +77,7 @@ section {
     text-align: center;
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 2rem;
     border-radius: 10px;
     max-width: 850px;
@@ -209,14 +209,13 @@ footer {
     }
 
     .lista li a {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .botones-menu {
         flex-direction: row;
         justify-content: center;
         gap: 5px;
-        margin-top: 10px;
     }
 
     section {

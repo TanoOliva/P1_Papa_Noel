@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f5;
@@ -17,7 +19,7 @@ header {
     display: flex;
     flex-direction: center;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .logo img {
@@ -74,6 +76,70 @@ h2 {
     margin-top: 10px;
     border-radius: 8px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .lista li a {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .logo img {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .lista {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .lista li a {
+        font-size: 0.9rem;
+    }
+
+}
+
 
 
 footer {
