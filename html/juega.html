@@ -9,12 +9,12 @@
 <body>
     <header>
         <nav>
-            <div class="nav-container">
+            <div class="menu">
                 <div class="logo">
                     <img src="/images/logo.png" alt="Logo del sitio">
                 </div>
-                <ul class="menu">
-                    <li><a href="../html/index.html">Home</a></li>
+                <ul class="lista">
+                    <li><a href="../html/index.html">Inicio</a></li>
                     <li><a href="../html/papanoel.html">Papá Noel</a></li>
                     <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
                     <li><a href="../html/envia.html">Envia tu carta</a></li>
@@ -25,25 +25,25 @@
     </header>
 
 
-    <div class="game-container">
-        <h1 class="game-title">¡Encuentra al Oso Polar!</h1>
-        <div class="image-container">
-            <img src="/images/acertijo1.webp" alt="Acertijo visual" class="acertijo-image">
+    <div class="juego">
+        <h1 class="titulo-juego">¡Encuentra al Oso Polar!</h1>
+        <div class="imagen-juego">
+            <img src="/images/acertijo1.webp" class="acertijo-image">
         </div>
-        <button class="hint-button" onclick="alert('Su amigo el sombrerero lo mira hacia arriba y el con su nariz redonda, la aventura se aviva.')">Obtener Pista</button>
+        <button class="hint-button" onclick="alert('Nuestro querido oso polar con nariz oscura y circular está arriba de su amigo el sombrerero. ¿Lo encontraste? ')">Obtener Pista</button>
     </div>
 
-    <div class="game-container">
-        <h2 class="game-title">¡Encuentra las Palabras!</h2>
+    <div class="juego">
+        <h2 class="titulo-juego">¡Encuentra las Palabras!</h2>
     
-        <div class="word-search-container">
-            <div class="image-container">
+        <div class="sopa">
+            <div class="imagen-juego">
                 <img src="/images/sopa.png" alt="Sopa de letras" class="sopa-image">
             </div>
             
-            <div class="word-list-container">
+            <div class="lista-sopa">
                 <h3>Palabras a buscar:</h3>
-                <ul class="word-list">
+                <ul class="palabras">
                     <li>REGALO</li>
                     <li>ÁRBOL</li>
                     <li>CARTA</li>
@@ -60,9 +60,9 @@
             </div>
         </div>
 
-        <div id="solucion" class="solucion-container">
+        <div id="solucion" class="solucion-sopa">
             <h4>Sopa de Letras Resuelta</h4>
-            <img src="/images/sopa2.jpeg" alt="Sopa resuelta" class="sopa-resuelta-image">
+            <img src="/images/sopa2.jpeg" class="sopa-resuelta-image">
         </div>
 
     </div>
