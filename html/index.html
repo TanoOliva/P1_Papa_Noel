@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Viaje de Papá Noel</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Viaje de Papá Noel</title>
+        <link rel="stylesheet" href="/css/styles.css">
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="menu">
-                <div class="logo">
-                    <img src="/images/logo.png">
+    <body>
+        <header>
+            <nav>
+                <div class="menu">
+                    <div class="logo">
+                        <img src="/images/logo.png" alt="logo">
+                    </div>
+                    <ul class="lista">
+                        <li><a href="../html/index.html">Inicio</a></li>
+                        <li><a href="../html/papanoel.html">Papá Noel</a></li>
+                        <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
+                        <li><a href="../html/envia.html">Envia tu carta</a></li>
+                        <li><a href="../html/juega.html">¡Juega!</a></li>
+                    </ul>
+                    <div class="botones-menu">
+                        <button>Sign in</button>
+                        <button>Register</button>
+                    </div>
                 </div>
-                <ul class="lista">
-                    <li><a href="../html/index.html">Inicio</a></li>
-                    <li><a href="../html/papanoel.html">Papá Noel</a></li>
-                    <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
-                    <li><a href="../html/envia.html">Envia tu carta</a></li>
-                    <li><a href="../html/juega.html">¡Juega!</a></li>
-                </ul>
-                <div class="botones-menu">
-                    <button>Sign in</button>
-                    <button>Register</button>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    
-    <section id="Home">
-        <h1>SIGUE A PAPÁ NOEL</h1>
-        <p>FALTÁN <span id="contador">XX</span> PARA NAVIDAD</p>
-        <button>EMPEZAR</button>
-    </section>
+        
+        <section id="Home">
+            <h1>SIGUE A PAPÁ NOEL</h1>
+            <p>FALTÁN <span id="contador">XX</span> PARA NAVIDAD</p>
+            <button>EMPEZAR</button>
+        </section>
 
 
-    <script>
-        function actualizarContador() {
-            const hoy = new Date();
-            const navidad = new Date(hoy.getFullYear(), 11, 25);
+        <script>
+            function actualizarContador() {
+                const hoy = new Date();
+                const navidad = new Date(hoy.getFullYear(), 11, 25);
 
-            if (hoy > navidad) {
-                navidad.setFullYear(navidad.getFullYear() + 1);
+                if (hoy > navidad) {
+                    navidad.setFullYear(navidad.getFullYear() + 1);
+                }
+
+                const diferencia = navidad - hoy;
+                const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horasRestantes = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+                document.getElementById('contador').innerText = 
+                    `${diasRestantes} días, ${horasRestantes} horas, ${minutosRestantes} minutos, ${segundosRestantes} segundos`;
             }
 
-            const diferencia = navidad - hoy;
-            const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-            const horasRestantes = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-            const segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-            document.getElementById('contador').innerText = 
-                `${diasRestantes} días, ${horasRestantes} horas, ${minutosRestantes} minutos, ${segundosRestantes} segundos`;
-        }
-
-        setInterval(actualizarContador, 1000);
-    </script>
+            setInterval(actualizarContador, 1000);
+        </script>
 
 
-    <div class="gif">
-        <img src="/images/santabaila2.gif" class="santa">
-    </div>
-
-    <footer>
-        <div class="pie">
-            <div class="pie-logo">
-                <img src="/images/logo.png">
-            </div>
-            <nav class="pie-menu">
-                <ul>
-                    <li><a href="../html/index.html">Inicio</a></li>
-                    <li><a href="../html/papanoel.html">Papá Noel</a></li>
-                    <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
-                    <li><a href="../html/envia.html">Envía tu carta</a></li>
-                    <li><a href="../html/juega.html">Jugar</a></li>
-                </ul>
-            </nav>
-            <div class="pie-contacto">
-                <p><strong>Email:</strong> <a href="mailto:linternaPolar@gmail.es">contacto@empresa.com</a></p>
-                <p><strong>Teléfono:</strong> +34 945832289</p>
-                <p><strong>Dirección:</strong> Calle Falsa 123, Madrid, España</p>
-            </div>
-        </div>
-        <div class="pie-boton">
-            <p>&copy; 2024  Linterna Polar. Todos los derechos reservados.</p>
+        <div class="gif">
+            <img src="/images/santabaila2.gif" alt="santa"class="santa">
         </div>
 
-    </footer>
-</body>
+        <footer>
+            <div class="pie">
+                <div class="pie-logo">
+                    <img src="/images/logo.png" alt="logo">
+                </div>
+                <nav class="pie-menu">
+                    <ul>
+                        <li><a href="../html/index.html">Inicio</a></li>
+                        <li><a href="../html/papanoel.html">Papá Noel</a></li>
+                        <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
+                        <li><a href="../html/envia.html">Envía tu carta</a></li>
+                        <li><a href="../html/juega.html">Jugar</a></li>
+                    </ul>
+                </nav>
+                <div class="pie-contacto">
+                    <p><strong>Email:</strong> <a href="mailto:linternaPolar@gmail.es">contacto@empresa.com</a></p>
+                    <p><strong>Teléfono:</strong> +34 945832289</p>
+                    <p><strong>Dirección:</strong> Calle Falsa 123, Madrid, España</p>
+                </div>
+            </div>
+            <div class="pie-boton">
+                <p>&copy; 2024  Linterna Polar. Todos los derechos reservados.</p>
+            </div>
+
+        </footer>
+    </body>
 </html>
