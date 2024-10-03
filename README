@@ -21,9 +21,9 @@ Descripción:
     --> Envia tu carta: 4ta página la cual consiste en un formulario para enviar
                         cartas a papa noel.
 
-    --> ¡Juega!: 5ta página la cual contiene dos juegos interactivos. uno de
-                 busqueda de un oso entre muchos hombre de nieve y una sopa
-                 de letras navideño.
+    --> ¡Juega!: 5ta página la cual contiene tres juegos interactivos. uno de
+                 busqueda de un oso entre muchos hombre de nieve. una sopa
+                 de letras navideño y un memorice.
 
 Instrucciones:
 
@@ -37,17 +37,11 @@ Instrucciones:
 
 Declaración de IA:
 
---> 1. Contador de días: Se utilizó la ayuda de una inteligencia artificial para
-                         crear el contador regresivo de días.
-
---> 2. Estilos css: Se utilizó la ayuda de una inteligencia artificial para buscar
+--> 1. Estilos css: Se utilizó la ayuda de una inteligencia artificial para buscar
                     estilos y recomendaciones de diseño.
                       
 
---> 3. Textos: Se utilizó la ayuda de una inteligencia artificial para generar los textos
+--> 2. Textos: Se utilizó la ayuda de una inteligencia artificial para generar los textos
                utilizados en la páginas Papá Noel y Biblioteca de cartas. Textos navideños
                relacionados a la historia de Papá Noel y cartas escritas por niños de
                diferentes paises.
-
---> 4. Juegos: Se utilizó la ayuda de una inteligencia artificial para la creación de los
-               botones de verificación y de pista que están en la página de ¡Juegos!.

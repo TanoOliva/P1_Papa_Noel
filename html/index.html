@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Viaje de Papá Noel</title>
         <link rel="stylesheet" href="/css/styles.css">
-
     </head>
+
 
     <body>
         <header>
@@ -16,11 +17,11 @@
                         <img src="/images/logo.png" alt="logo">
                     </div>
                     <ul class="lista">
-                        <li><a href="../html/index.html">Inicio</a></li>
-                        <li><a href="../html/papanoel.html">Papá Noel</a></li>
-                        <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
-                        <li><a href="../html/envia.html">Envia tu carta</a></li>
-                        <li><a href="../html/juega.html">¡Juega!</a></li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#papanoel">Papá Noel</a></li>
+                        <li><a href="#cartas">Biblioteca de Cartas</a></li>
+                        <li><a href="#envia">Envía tu Carta</a></li>
+                        <li><a href="#juega">¡Juega!</a></li>
                     </ul>
                     <div class="botones-menu">
                         <button>Sign in</button>
@@ -30,40 +31,189 @@
             </nav>
         </header>
 
-        
-        <section id="Home">
-            <h1>SIGUE A PAPÁ NOEL</h1>
-            <p>FALTÁN <span id="contador">XX</span> PARA NAVIDAD</p>
-            <button>EMPEZAR</button>
+        <section id="home" class="pagina">
+            <div>
+                <h1>SIGUE A PAPÁ NOEL</h1>
+                <p>FALTAN <span id="contador">83 días, 7 horas, 58 minutos, 29 segundos  </span> PARA NAVIDAD</p>
+                <button>EMPEZAR</button>
+            </div>
+            <img src="/images/santabaila2.gif" alt="Santa Bailando" class="santa">
         </section>
 
 
-        <script>
-            function actualizarContador() {
-                const hoy = new Date();
-                const navidad = new Date(hoy.getFullYear(), 11, 25);
+        
+        <section id="papanoel">
+            <section class="intro">
+                <h1>La Historia de Papá Noel</h1>
+                <p>¿Sabías que Papá Noel no siempre fue el personaje que conocemos hoy? ¡Descubre su historia y algunas curiosidades navideñas mientras nos preparamos para la gran noche!</p>
+                <img class="gif" src="/images/santaregalo.gif" alt="santaRegalo">
+            </section>
+        
+            <section class="historia">
+                <div class="contenedor-historia">
+                    <img src="/images/santacorre.gif" alt="Papa Noel" class="imagen-papanoel">
+                    <div class="texto-historia">
+                        <h2>¿Quién es Papá Noel?</h2>
+                        <p>Hace mucho tiempo, vivía un hombre llamado Nicolás. Le encantaba hacer felices a las personas, pero lo que más le gustaba era ver sonreír a los niños. Un día decidió que quería llevar alegría a todos los niños del mundo, ¡y así fue como comenzó la magia!</p>
+                
+                        <p>Nicolás vivía en un lugar muy especial, el Polo Norte. Allí, construyó una gran fábrica de juguetes junto a sus ayudantes, los elfos. Estos elfos eran pequeños, divertidos y muy trabajadores. Durante todo el año, fabrican juguetes para todos los niños y niñas que se portaban bien.</p>
+                
+                        <p>Cada 24 de diciembre, cuando los niños están dormidos, Papá Noel (que es como ahora llamamos a Nicolás) carga su trineo con todos los regalos y, con la ayuda de sus renos, vuela por el cielo. Pero hay algo especial que hace su trabajo aún más mágico: ¡Papá Noel puede entrar a las casas a través de la chimenea! Con un toque de magia, deja los regalos bajo el árbol de Navidad o en los calcetines que los niños cuelgan cerca de la chimenea.</p>
+                
+                    </div>
+                </div>
 
-                if (hoy > navidad) {
-                    navidad.setFullYear(navidad.getFullYear() + 1);
-                }
+            </section>
+        
+            <section class="curiosidades">
+                <h2>Curiosidades sobre Papá Noel</h2>
+                <div class="curiosidades-caja">
+                    <div class="curiosidad">
+                        <h3>La bolsa mágica de Papá Noel</h3>
+                        <p>Papá Noel tiene una bolsa que nunca se vacía, ¡aunque reparta millones de juguetes! Cada vez que saca un regalo, otro aparece mágicamente dentro. Nadie sabe cómo funciona, pero los elfos dicen que está hecha con la tela más mágica del mundo.</p>
+                        <img src="/images/saco.png" alt="saco" class="imagen">
+                    </div>
+                    <div class="curiosidad">
+                        <h3>Los renos de Papá Noel</h3>
+                        <p>Los renos de Papá Noel no solo vuelan, sino que son tan rápidos que pueden recorrer todo el mundo en una sola noche. Su secreto está en un polvo especial de estrellas que Papá Noel les da antes de salir, ¡y por eso brillan cuando vuelan por el cielo!</p>
+                        <img src="/images/reno.webp" alt="reno" class="imagen">
+                    </div>
+                    <div class="curiosidad">
+                        <h3>Los zapatos de Papá Noel</h3>
+                        <p>Papá Noel tiene unos zapatos que le permiten caminar por cualquier tipo de techo, ¡incluso los más empinados y resbaladizos! Están hechos de cuero de nube, una sustancia tan suave que también le permite caminar sin hacer ruido.</p>
+                        <img src="/images/zapato.webp" alt="zapato" class="imagen">
+                    </div>
+                    <div class="curiosidad">
+                        <h3>El reloj del tiempo de Papá Noel</h3>
+                        <p>En su trineo, Papá Noel tiene un reloj muy especial que puede detener el tiempo. Esto le permite entregar los regalos sin que los niños lo descubran, ¡incluso si visita miles de casas en una sola noche!</p>
+                        <img src="/images/trineo.png" alt="Trineo" class="imagen">
+                    </div>
+                </div>
+            </section>
 
-                const diferencia = navidad - hoy;
-                const diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-                const horasRestantes = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-                const segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
+        </section>
 
-                document.getElementById('contador').innerText = 
-                    `${diasRestantes} días, ${horasRestantes} horas, ${minutosRestantes} minutos, ${segundosRestantes} segundos`;
-            }
+        <section id="cartas">
+            <section class="cartas-recibidas">
+                <h2>Cartas a Papá Noel</h2>
+                <div class="cartas-container">
+                    <div class="carta">
+                        <div class="perfil-descripcion">
+                            <img src="/images/perfil4.avif" alt="Perfil de Sofía" class="perfil-img">
+                            <strong>De: Sofía, 6 años - Cali - Colombia</strong>
+                        </div>
+                        <div class="contenido-carta">
+                            <p>Querido Papá Noel,</p>
+                            <p>Me llamo Sofía, este año me porté muy bien, ayudé a mi mamá a recoger los juguetes y también hice la tarea todos los días. Mi perrito, Max, también se portó muy bien y espero que también le traigas un hueso grande.</p>
+                            <p>Me gustaría mucho que me traigas una muñeca que hable y que tenga un vestidito rosa, y también un osito de peluche para dormir con él todas las noches. Si no puedes traerme todo, no te preocupes, con que vengas a visitarnos ya estoy muy feliz.</p>
+                            <p>Espero que tú y tus renos estén bien y que no tengan frío en el Polo Norte.</p>
+                            <p>Te quiero mucho. Te voy a dejar galletas y leche para que descanses cuando llegues a mi casa.</p>
+                            <p>¡Feliz Navidad!</p>
+                        </div>
+                    </div>
+        
+                    <div class="carta">
+                        <div class="perfil-descripcion">
+                            <img src="/images/perfil5.avif" alt="Perfil de Carla" class="perfil-img">
+                            <strong>De: Carla, 10 años - Buenos Aires - Argentina</strong>
+                        </div>
+                        <div class="contenido-carta">
+                            <img src="/images/carta1.webp" alt="Carta de Carla">
+                        </div>
+                    </div>
+        
+                    <div class="carta">
+                        <div class="perfil-descripcion">
+                            <img src="/images/perfil1.avif" alt="Perfil de David" class="perfil-img">
+                            <strong>De: David, 9 años - Valparaiso - Chile</strong>
+                        </div>
+                        <div class="contenido-carta">
+                            <img src="/images/carta2.avif" alt="Carta de David">
+                        </div>
+                    </div>
+        
+                    <div class="carta">
+                        <div class="perfil-descripcion">
+                            <img src="/images/perfil2.avif" alt="Perfil de Joaquin" class="perfil-img">
+                            <strong>De: Joaquin, 11 años - Madrid - España</strong>
+                        </div>
+                        <div class="contenido-carta">
+                            <img src="/images/carta3.jpg" alt="Carta de Joaquin">
+                        </div>
+                    </div>
 
-            setInterval(actualizarContador, 1000);
-        </script>
+                    <div class="carta">
+                        <div class="perfil-descripcion">
+                            <img src="/images/perfil2.avif" alt="Perfil de Joaquin" class="perfil-img">
+                            <strong>De: john, 10 años - New York - Estados Unidos</strong>
+                        </div>
+                        <div class="contenido-carta">
+                            <img src="/images/carta6.jpg" alt="Carta de Joaquin">
+                        </div>
+                    </div>
+        
+                    <div class="carta">
+                        <div class="perfil-descripcion">
+                            <img src="/images/perfil3.avif" alt="Perfil de Valentina" class="perfil-img">
+                            <strong>De: Valentina, 9 años - Ciudad de México - México</strong>
+                        </div>
+                        <div class="contenido-carta">
+                            <p>Querido Papá Noel,</p>
+                            <p>Este año fue un poco difícil para mí y mi familia, nos mudamos a una casa más pequeña. No sé si puedas traerme regalos, pero lo que más deseo es que mi mamá, mi papá y yo podamos estar juntos en Navidad y podamos comer muchas cosas ricas.</p>
+                            <p>Si puedes, me gustaría un pollo asado bien grande para comer con mi familia y quiero un vestido azul para Navidad.</p>
+                            <p>¡Feliz Navidad!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <section id="envia">
+            <section class="enviar">
+                <div class="formulario">
+                    <h1>ENVÍA TU CARTA A PAPÁ NOEL</h1>
+                    <h3>Se la enviaremos enseguida</h3>
+            
+                    <form action="/enviar" method="post" enctype="multipart/form-data">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+            
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="100" required>
+                        
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
 
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" name="pais" required>
+            
+                        <label for="mensaje">Escribe tu carta:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Querido Papá Noel, ¡Feliz Navidad!" required></textarea>
+            
+                        <p>O sube una foto de tu carta:</p>
+                        <input type="file" id="carta-foto" name="carta-foto" accept="image/*">
+            
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </section>
 
-        <div class="gif">
-            <img src="/images/santabaila2.gif" alt="santa"class="santa">
-        </div>
+        <section id="juega">
+            <div class="titulo-seccion">
+                <h1>¡Juega!</h1>
+            </div>
+            <div class="contenido-juego">
+                <div class="menu-juegos">
+                        <button href="#">Encuentra al Oso Polar</button>
+                        <button href="#">Sopa Navideña</button>
+                        <button href="#">Memoria de Santa</button>
+                </div>
+                <div class="contenedor-juego">
+                    <img class="imagen-juego" src="/images/acertijo1.webp" alt="Encuentra al Oso Polar">
+                </div>
+            </div>
+        </section>
 
         <footer>
             <div class="pie">
@@ -72,11 +222,11 @@
                 </div>
                 <nav class="pie-menu">
                     <ul>
-                        <li><a href="../html/index.html">Inicio</a></li>
-                        <li><a href="../html/papanoel.html">Papá Noel</a></li>
-                        <li><a href="../html/cartas.html">Biblioteca de cartas</a></li>
-                        <li><a href="../html/envia.html">Envía tu carta</a></li>
-                        <li><a href="../html/juega.html">Jugar</a></li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#papanoel">Papá Noel</a></li>
+                        <li><a href="#cartas">Biblioteca de Cartas</a></li>
+                        <li><a href="#envia">Envía tu Carta</a></li>
+                        <li><a href="#juega">¡Juega!</a></li>
                     </ul>
                 </nav>
                 <div class="pie-contacto">
@@ -86,9 +236,8 @@
                 </div>
             </div>
             <div class="pie-boton">
-                <p>&copy; 2024  Linterna Polar. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Linterna Polar. Todos los derechos reservados.</p>
             </div>
-
         </footer>
     </body>
 </html>

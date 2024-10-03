@@ -1,22 +1,32 @@
+/* Importación de la fuente Poppins (común en todas las páginas) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f6f5 url('/images/fondo3.jpg') center/cover no-repeat;
     color: #333;
+    background: linear-gradient(to bottom, #25d4cf, #c5eaf7, #93f7f3, #ebfdfd);
 }
-
-
 
 header {
     background: #25d4cf;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
 }
 
+.pagina {
+    background: #f4f6f5 url('/images/fondo3.jpg') center/cover no-repeat;
+    position: relative; 
+    padding: 2rem;
+    border-radius: 10px; 
+}
+
+/* Menú */
 .menu {
     display: flex;
     justify-content: center;
@@ -45,23 +55,6 @@ header {
     transition: color 0.3s ease;
 }
 
-
-.gif {
-    position: relative;
-    bottom: 0;
-    width: 300px; 
-    height: auto;
-    z-index: 2;
-    transform: translateX(-16%);
-    top: 44px;
-}
-
-
-.botones-menu {
-    display: flex;
-    gap: 10px;
-}
-
 button {
     padding: 8px 16px;
     border: none;
@@ -73,33 +66,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-section {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin: 50px auto;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 850px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #d41717;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-#contador {
-    font-weight: bold;
-    color: #0c97c6;
-}
-
-
-
+/* Pie de página */
 footer {
     background-color: #710b0b;
     color: white;
@@ -134,28 +101,284 @@ footer {
     font-size: 0.8rem;
 }
 
-.pie-contacto p {
-    margin: 5px 0;
+
+
+/* Sección de Inicio */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#home > div {
+    text-align: center;
+    background-color: #fff; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px; 
+    max-width: 850px;
+    width: 70%; 
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d41717;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+#contador {
+    font-weight: bold;
+    color: #0c97c6;
+}
+
+/* Sección Papá Noel */
+#papanoel {
+
+    .intro {
+        text-align: center;
+        padding: 2rem;
+        background-color: #fff;
+        margin: 20px auto;
+        max-width: 80%;
+        border-radius: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .gif{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+    .contenedor-historia {
+        display: flex;
+        align-items: flex-start; 
+        gap: 20px; 
+    }
+
+    .imagen-papanoel {
+        max-width: 50%; 
+        height: auto; 
+        border-radius: 10px;
+        margin-top: 300px;
+    }
+
+    .texto-historia {
+        max-width: 900px; 
+    }
+    .historia, .curiosidades {
+        background-color: #f9f9f9;
+        padding: 2rem;
+        margin: 20px auto;
+        max-width: 900px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        font-size: 0.8rem;
+    }
+    
+    .curiosidades h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 2rem;
+    }
+    
+    .curiosidades {
+        padding: 2rem;
+        text-align: center;
+        background-color: #f4f6f5;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        margin: 2rem auto;
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 10px;
+    }
+    
+    .curiosidad {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .curiosidades-caja {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .imagen {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+    
+    .curiosidad h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: #ff5733;
+    }
+    
+    .curiosidad p {
+        font-size: 1rem;
+        color: #333;
+    }
+}
+
+#cartas {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cartas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.carta {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 0.7rem;
 }
 
-.pie-boton {
-    background-color: #5a0a0a;
-    padding: 10px 0;
-    font-size: 0.5rem;
+
+.perfil-descripcion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.8rem; 
+}
+
+.carta img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.perfil-img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+}
+
+.contenido-carta {
+    padding-top: 10px; 
 }
 
 
+/* Sección Envía tu Carta */
+#envia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 
+#envia h1{
+    font-size: 1.6rem;
+}
+
+#envia .formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    max-width: 600px;
+
+}
+
+#envia input[type="text"],
+#envia input[type="number"],
+#envia textarea,
+#envia input[type="file"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+/* Sección ¡Juega! */
+#juega {
+    padding: 40px 20px;
+    background-color: #f4f6f5;
+    border-radius: 10px;
+}
+
+.titulo-seccion h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.contenido-juego {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.menu-juegos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 90%;
+}
+
+.menu-juegos button, .menu-juegos a {
+    padding: 15px;
+    background-color: #25d4cf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%; 
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 200px;
+}
+
+.contenedor-juego {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedor-juego img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Sitio responsivo */
 @media screen and (max-width: 768px) {
     .menu {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .logo {
-        order: -1;
     }
 
     .logo img {
@@ -173,28 +396,18 @@ footer {
         letter-spacing: 0.5px;
     }
 
-    .botones-menu {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
+    #home > div {
+        margin-top: 50px;
     }
+    
 
-    section {
-        padding: 1.5rem;
-        max-width: 500px;
-    }
 }
 
 @media screen and (max-width: 600px) {
-    
     .menu {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .logo {
-        order: -1;
     }
 
     .logo img {
@@ -211,16 +424,4 @@ footer {
     .lista li a {
         font-size: 0.9rem;
     }
-
-    .botones-menu {
-        flex-direction: row;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-
-
 }
