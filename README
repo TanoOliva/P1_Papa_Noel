@@ -45,3 +45,10 @@ Declaración de IA:
                utilizados en la páginas Papá Noel y Biblioteca de cartas. Textos navideños
                relacionados a la historia de Papá Noel y cartas escritas por niños de
                diferentes paises.
+
+
+
+
+Observacion: Se utilizaron hojas de estilo para cada pagina, luego las
+             juntamos en una sola hoja de estilos llamada styles.css y 
+             nuestra html principal es index.html

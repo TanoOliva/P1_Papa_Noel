@@ -101,6 +101,15 @@ footer {
     font-size: 0.8rem;
 }
 
+.pie-contacto {
+    font-size: 0.5rem;
+}
+
+.pie-boton {
+    font-size: 0.6rem;
+   background-color: #560404;
+}
+
 
 
 /* Sección de Inicio */
@@ -139,98 +148,107 @@ p {
 }
 
 /* Sección Papá Noel */
-#papanoel {
 
-    .intro {
-        text-align: center;
-        padding: 2rem;
-        background-color: #fff;
-        margin: 20px auto;
-        max-width: 80%;
-        border-radius: 10px;
-        font-size: 0.8rem;
-    }
-    
-    .gif{
-        width: 80%;
-        margin-top: 20px;
-    }
-    
-    .contenedor-historia {
-        display: flex;
-        align-items: flex-start; 
-        gap: 20px; 
-    }
 
-    .imagen-papanoel {
-        max-width: 50%; 
-        height: auto; 
-        border-radius: 10px;
-        margin-top: 300px;
-    }
-
-    .texto-historia {
-        max-width: 900px; 
-    }
-    .historia, .curiosidades {
-        background-color: #f9f9f9;
-        padding: 2rem;
-        margin: 20px auto;
-        max-width: 900px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        font-size: 0.8rem;
-    }
-    
-    .curiosidades h2 {
-        font-size: 2rem;
-        color: #333;
-        margin-bottom: 2rem;
-    }
-    
-    .curiosidades {
-        padding: 2rem;
-        text-align: center;
-        background-color: #f4f6f5;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        margin: 2rem auto;
-        width: 80%;
-        max-width: 1200px;
-        border-radius: 10px;
-    }
-    
-    .curiosidad {
-        background-color: white;
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .curiosidades-caja {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px;
-    }
-    
-    .imagen {
-        max-width: 80%;
-        height: auto;
-        display: block;
-        margin: 10px auto;
-    }
-    
-    .curiosidad h3 {
-        font-size: 1.25rem;
-        margin-bottom: 0.75rem;
-        color: #ff5733;
-    }
-    
-    .curiosidad p {
-        font-size: 1rem;
-        color: #333;
-    }
+#papanoel .intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    font-size: 0.8rem;
 }
+
+#papanoel h2 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+#papanoel h3 {
+    font-size: 1.2rem;
+}
+
+#papanoel .gif{
+    width: 80%;
+    margin-top: 20px;
+}
+
+#papanoel .contenedor-historia {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+#papanoel .imagen-papanoel {
+    max-width: 45%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+#papanoel .texto-historia {
+    font-size: 0.7rem;
+}
+#papanoel .historia, .curiosidades {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-size: 0.8rem;
+}
+
+#papanoel .curiosidades h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+#papanoel .curiosidades {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f6f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+#papanoel .curiosidad {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#papanoel .curiosidades-caja {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#papanoel .imagen {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+#papanoel .curiosidad h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #ff5733;
+}
+
+#papanoel .curiosidad p {
+    font-size: 1rem;
+    color: #333;
+}
+
 
 #cartas {
     margin-top: 40px;
@@ -282,23 +300,32 @@ p {
 /* Sección Envía tu Carta */
 #envia {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px;
+    background-color: #9dbbe2;
+}
+
+#envia h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
 }
 
 #envia h1{
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 #envia .formulario {
     background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 80%;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
     margin-top: 20px;
     font-size: 0.8rem;
     max-width: 600px;
+    
 
 }
 
@@ -317,12 +344,12 @@ p {
 
 /* Sección ¡Juega! */
 #juega {
-    padding: 40px 20px;
+    padding: 40px 70px;
     background-color: #f4f6f5;
     border-radius: 10px;
 }
 
-.titulo-seccion h1 {
+#juega h2 {
     text-align: center;
     font-size: 2.5rem;
     color: #333;
@@ -332,6 +359,7 @@ p {
 .contenido-juego {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    gap: 20px;
 }
 
 .menu-juegos {
@@ -341,22 +369,18 @@ p {
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
-    height: 90%;
+    height: 100%;
 }
 
-.menu-juegos button, .menu-juegos a {
-    padding: 15px;
+.menu-juegos button {
+    padding: 10px;
     background-color: #25d4cf;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    width: 100%; 
-    margin-top: 60px;
-    margin-bottom: 60px;
-    gap: 200px;
 }
 
 .contenedor-juego {
@@ -400,6 +424,10 @@ p {
         margin-top: 50px;
     }
     
+    #papanoel .contenedor-historia {
+        flex-direction: column;
+        text-align: center;
+    }
 
 }
 
