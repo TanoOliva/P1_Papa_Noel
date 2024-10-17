@@ -68,3 +68,5 @@ document.getElementById("form-registro").addEventListener("submit", function(eve
     }
 });
 
+
+
