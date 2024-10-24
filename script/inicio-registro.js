@@ -99,10 +99,23 @@ document.getElementById("form-login").addEventListener("submit", function(event)
     document.getElementById("popup-login").style.display = "none";
 });
 
+
+document.getElementById("perfil-icono").addEventListener("click", function() {
+    const perfilOpciones = document.getElementById("perfil-opciones");
+    if (perfilOpciones.style.display === "none") {
+        perfilOpciones.style.display = "block";
+    } else {
+        perfilOpciones.style.display = "none";
+    }
+});
 // Cerrar sesión
 document.getElementById("cerrar-sesion").addEventListener("click", function() {
-    localStorage.removeItem('usuarioActual');
+    localStorage.removeItem("username");  // O puedes manejarlo como prefieras
+    localStorage.removeItem("password");
+    
+    // Ocultar el perfil y mostrar de nuevo los botones de inicio y registro
     document.getElementById("perfil-menu").style.display = "none";
     document.querySelector(".botones-menu").style.display = "flex";
+
     alert("Has cerrado sesión correctamente.");
 });
