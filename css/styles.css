@@ -138,7 +138,7 @@ button {
     margin-left: 5px;
 }
 
-/*Sección Menu Usuario*/
+/*Sección enu Usuario*/
 .perfil-menu {
     position: relative;
 }
@@ -456,6 +456,7 @@ p {
 #envia input[type="text"],
 #envia input[type="number"],
 #envia textarea,
+#envia input[type="email"],
 #envia input[type="file"] {
     width: 100%; 
     padding: 10px;
