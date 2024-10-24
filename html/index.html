@@ -141,7 +141,7 @@
 
         <script src="/script/inicio-registro.js"></script>
         <script src="/script/perfil.js"></script>
-
+        
 
 
 
@@ -308,6 +308,8 @@
                 </div>
             </section>
         </section>
+
+
         
         <section id="envia">
             <h2>FORMULARIO MÁGICO</h2>
@@ -315,31 +317,38 @@
                 <div class="formulario">
                     <h3>ENVIA TU CARTA A PAPÁ NOEL</h3>
                     <h4>Se la enviaremos enseguida</h4>
-            
-                    <form action="/enviar" method="post" enctype="multipart/form-data">
+        
+                    <!-- Añadir id al formulario para referenciarlo en el script -->
+                    <form id="form-enviar-carta" enctype="multipart/form-data">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-            
+                        <input type="text" id="nombre-carta" name="nombre" required>
+        
                         <label for="edad">Edad:</label>
-                        <input type="number" id="edad" name="edad" min="1" max="100" required>
-                        
+                        <input type="number" id="edad-carta" name="edad" min="1" max="100" required>
+        
+                        <!-- Actualizamos el id y name del correo -->
+                        <label for="correo-carta">Correo electrónico:</label>
+                        <input type="email" id="correo-carta" name="correo-carta" required>
+        
                         <label for="ciudad">Ciudad:</label>
-                        <input type="text" id="ciudad" name="ciudad" required>
-
+                        <input type="text" id="ciudad-carta" name="ciudad" required>
+        
                         <label for="pais">País:</label>
-                        <input type="text" id="pais" name="pais" required>
-            
+                        <input type="text" id="pais-carta" name="pais" required>
+        
                         <label for="mensaje">Escribe tu carta:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Querido Papá Noel, ¡Feliz Navidad!" required></textarea>
-            
+                        <textarea id="mensaje-carta" name="mensaje" rows="5" placeholder="Querido Papá Noel, ¡Feliz Navidad!" required></textarea>
+        
                         <p>O sube una foto de tu carta:</p>
                         <input type="file" id="carta-foto" name="carta-foto" accept="image/*">
-            
+        
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
             </section>
         </section>
+
+        <script src="/script/enviar-carta.js"></script>
 
         <section id="juega">
             <h2>¡Juega!</h2>
