@@ -254,8 +254,6 @@ p {
 }
 
 /* Sección Papá Noel */
-
-
 #papanoel .intro {
     text-align: center;
     padding: 2rem;
@@ -284,29 +282,37 @@ p {
 
 #papanoel .contenedor-historia {
     display: flex;
-    align-items: center; 
+    align-items: flex-start; 
     justify-content: center;
     gap: 20px;
-   
+    margin-bottom: 20px;
 }
 
-#papanoel .imagen-papanoel {
-    max-width: 40%; 
-    height: auto; 
+#papanoel .contenedor-historia img {
+    max-width: 150px;
+    height: auto;
     border-radius: 10px;
+}
+
+#papanoel .contenedor-historia p {
+    flex-grow: 1;
+    font-size: 0.8rem;
+    line-height: 1.5;
 }
 
 #papanoel .texto-historia {
     font-size: 0.7rem;
 }
+
 #papanoel .historia, .curiosidades {
-    background-color: #f9f9f9;
-    padding: 2rem;
+    background-color: #ffffff;
+    padding: 15px;
     margin: 20px auto;
     max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     font-size: 0.8rem;
+    width: 95%;
 }
 
 #papanoel .curiosidades h2 {
@@ -318,7 +324,7 @@ p {
 #papanoel .curiosidades {
     padding: 2rem;
     text-align: center;
-    background-color: #f4f6f5;
+    background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     margin: 2rem auto;
     width: 80%;
@@ -327,10 +333,10 @@ p {
 }
 
 #papanoel .curiosidad {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.612);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -545,8 +551,13 @@ p {
     #papanoel .contenedor-historia {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
+    #papanoel .contenedor-historia img{
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -575,6 +586,17 @@ p {
         padding: 20px; 
         margin: 10px 15px; 
         width: calc(100% - 30px);
+    }
+
+    #papanoel .contenedor-historia {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #papanoel .contenedor-historia img{
+        max-width: 80%;
+        margin-bottom: 10px;
     }
 
 }

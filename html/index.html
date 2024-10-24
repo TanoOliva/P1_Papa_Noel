@@ -36,7 +36,7 @@
                         <div class="perfil-opciones" id="perfil-opciones" style="display:none;">
                             <ul>
                                 <li><a href="#mi-perfil">Mi Perfil</a></li>
-                                <li><a href="#mis-cartas">Mis Cartas</a></li>
+                                <li><a href="#" id="mis-cartas">Mis Cartas</a></li>
                                 <li><a href="#" id="cerrar-sesion">Cerrar Sesión</a></li>
                             </ul>
                         </div>
@@ -130,10 +130,12 @@
             </div>
         </div>
 
-        <div id="popup-cartas" class="popup-registro" style="display:none;">
+        <div id="popup-cartas" class="popup-registro" style="display: none;">
             <div class="popup-content">
                 <h2>Mis Cartas</h2>
-                <div id="contenedor-cartas"></div>
+                <div id="cartas-container" class="cartas-recibidas">
+                    <!-- Aquí se mostrarán las cartas o el mensaje de no hay cartas -->
+                </div>
                 <button id="cerrar-cartas">Cerrar</button>
             </div>
         </div>
@@ -189,21 +191,34 @@
         
             <section class="historia">
                 <h2>¿Quién es Papá Noel?</h2>
+            
                 <div class="contenedor-historia">
-                    <img src="/images/santacorre.gif" alt="Papa Noel" class="imagen-papanoel">
-                    <div class="texto-historia">
-                        
-                        <p>Hace mucho tiempo, había un hombre llamado Nicolás, que siempre estaba feliz y le gustaba compartir esa alegría. Un día, decidió que quería llevar felicidad a todos los niños del mundo.</p>
-                
-                        <p>Nicolás vivía en un lugar muy frío y especial, el Polo Norte. Allí, con la ayuda de pequeños amigos llamados elfos, construyó una gran fábrica de juguetes.</p>
-                
-                        <p>Cada 24 de diciembre, cuando los niños duermen, Nicolás, que ahora conocemos como Papá Noel, sube a su trineo con muchos regalos. Con la ayuda de sus renos, vuela por el cielo y entra en las casas por la chimenea, dejando los regalos bajo el árbol de Navidad o en los calcetines colgados cerca de la chimenea.</p>
-                
-                        <p>¡Todo ocurre en un abrir y cerrar de ojos!</p>
-                    </div>
+                    <img src="/images/santacamina.gif" alt="Papa Noel caminando" class="imagen-papanoel">
+                    <p>Hace mucho tiempo, en lo más profundo del Polo Norte, vivía un hombre muy especial llamado Nicolás, aunque todos lo conocían cariñosamente como Papá Noel. Era conocido por su bondad y su gran corazón, siempre dispuesto a hacer sonreír a todos los niños del mundo.</p>
+                </div>
+            
+                <div class="contenedor-historia">
+                    <img src="/images/elfos.avif" alt="Taller de duendes" class="imagen-papanoel">
+                    <p>En su hogar, que está escondido entre montañas de hielo, Papá Noel tiene un enorme taller de juguetes. Este taller es un sitio lleno de color y alegría, donde cada día se fabrican los juguetes más fantásticos que puedas imaginar. Pero Papá Noel no trabaja solo. Lo ayudan los pequeños y traviesos duendes. Estos duendes son muy trabajadores y mágicos, y su trabajo es crear todos los juguetes que Papá Noel repartirá en Navidad.</p>
+                </div>
+            
+                <div class="contenedor-historia">
+                    <img src="/images/listamagica.gif" alt="Lista mágica" class="imagen-papanoel">
+                    <p>Papá Noel no solo fabrica juguetes porque sí. Cada año, en diciembre, revisa su lista mágica. Esta lista tiene los nombres de todos los niños del mundo, y junto con la Señora Noel, Papá Noel revisa quiénes han sido buenos. Si los niños han sido amables, generosos y han hecho cosas buenas durante el año, ¡su nombre aparece en la lista! Así, Papá Noel sabe exactamente qué juguete regalarles.</p>
+                </div>
+            
+                <div class="contenedor-historia">
+                    <img src="/images/trineosanta.gif" alt="Papa Noel y su trineo" class="imagen-papanoel-trineo">
+                    <p>Cuando llega la Nochebuena, Papá Noel se prepara para su gran viaje. Se pone su abrigo rojo, sus botas mágicas, y sube a su trineo volador, tirado por renos mágicos.</p>
+                </div>
+
+                <div class="contenedor-historia">
+                    <img src="/images/trineosanta.gif" alt="Papa Noel y su trineo" class="imagen-papanoel-trineo">
+                    <p>Cada año, en diciembre, Papá Noel vuelve a salir en su trineo para repartir regalos a los niños de todo el mundo. Su misión es hacer felices a los niños y recordarles la importancia de ser buenos, amables y generosos. Y así, la magia de la Navidad sigue viva gracias a Papá Noel, que cada año vuelve a traer alegría a todos los rincones del mundo.</p>
                 </div>
 
             </section>
+            
         
             <section class="curiosidades">
                 <h3>Curiosidades sobre Papá Noel</h3>
