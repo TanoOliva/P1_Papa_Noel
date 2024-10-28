@@ -59,6 +59,21 @@ header {
 }
 
 /* Pop-Up */
+
+#popup-cartas {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que el popup esté por encima de otros elementos */
+    margin: 10px;
+}
+
 .popup-registro {
     display: none;
     position: fixed;
@@ -379,11 +394,14 @@ p {
     font-size: 2.2rem;
 }
 
+
+
 .cartas-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px;
+    margin: 10px;
 }
 
 .carta {
@@ -408,6 +426,13 @@ p {
     border-radius: 8px;
 }
 
+.carta-foto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 .perfil-img {
     width: 50px; 
     height: 50px; 
@@ -415,10 +440,22 @@ p {
     margin-right: 15px; 
 }
 
-.contenido-carta {
-    padding-top: 10px; 
+.contenido-carta p {
+    margin: 0;
+    overflow-wrap: break-word; /* Corta las palabras largas */
+    word-wrap: break-word;
+    white-space: normal;
 }
 
+
+.contenido-cartaPerfil {
+    font-size: 0.9rem;
+    color: #555;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
 
 /* Sección Envía tu Carta */
 #envia {

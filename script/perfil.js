@@ -69,35 +69,53 @@ document.getElementById("form-registro").addEventListener("submit", function(eve
     }
 });
 
-
-
-// Mostrar pop-up de cartas
-document.getElementById("perfil-opciones").addEventListener("click", function(event) {
-    if (event.target.id === "mis-cartas") {
-        mostrarCartas();
-    }
+// Mostrar pop-up del perfil con los datos del usuario
+document.querySelector("#perfil-menu a[href='#mis-cartas']").addEventListener("click", function() {
+    mostrarCartas();
 });
+
 
 // Función para mostrar las cartas
 function mostrarCartas() {
-    const cartas = JSON.parse(localStorage.getItem("cartas")) || [];
+    // Obtener todos los usuarios desde el localStorage
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || {};
+    
+    // Supongamos que el nombre del usuario actual está guardado en `localStorage` como 'usuarioActual'
+    const usuarioActual = localStorage.getItem("usuarioActual");
+
+    // Verificar si el usuario actual existe en el objeto de usuarios
+    if (!usuarioActual || !usuarios[usuarioActual]) {
+        console.error("No se encontró el usuario actual o no hay datos de usuario.");
+        return;
+    }
+
+    // Obtener las cartas del usuario actual
+    const usuario = usuarios[usuarioActual];
+    const cartas = usuario.cartas || [];
     const cartasContainer = document.getElementById("cartas-container");
     cartasContainer.innerHTML = '';
 
+    // Mostrar mensaje si no hay cartas
     if (cartas.length === 0) {
         cartasContainer.innerHTML = "<p>No has enviado ninguna carta.</p>";
     } else {
+        // Mostrar cada carta
         cartas.forEach((carta, index) => {
             const cartaDiv = document.createElement("div");
             cartaDiv.classList.add("carta");
             cartaDiv.setAttribute("draggable", "true"); // Habilitar el drag and drop
 
+            // Verificar si la carta incluye una foto
+            const fotoHTML = carta.cartaFoto ? `<img src="${carta.cartaFoto}" alt="Carta de ${carta.nombre}" class="carta-foto">` : '';
+
+            // Crear el contenido de la carta
             cartaDiv.innerHTML = `
                 <div class="perfil-descripcion">
                     <strong>De: ${carta.nombre}, ${carta.edad} años - ${carta.ciudad} - ${carta.pais}</strong>
                 </div>
                 <div class="contenido-carta">
                     <p>${carta.mensaje}</p>
+                    ${fotoHTML}
                     <button class="borrar-carta" data-index="${index}">Borrar</button>
                 </div>
             `;
@@ -106,7 +124,7 @@ function mostrarCartas() {
             cartaDiv.querySelector(".borrar-carta").addEventListener("click", function() {
                 const confirmDelete = confirm("¿Estás seguro de que quieres borrar esta carta?");
                 if (confirmDelete) {
-                    borrarCarta(index);
+                    borrarCarta(index, usuarioActual);
                 }
             });
 
@@ -119,21 +137,26 @@ function mostrarCartas() {
         });
     }
 
+    // Muestra el popup de las cartas
     document.getElementById("popup-cartas").style.display = "flex";
 }
 
-// Cerrar pop-up de cartas
+// Función para borrar una carta
+function borrarCarta(index, usuarioActual) {
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || {};
+    
+    if (usuarios[usuarioActual] && usuarios[usuarioActual].cartas) {
+        usuarios[usuarioActual].cartas.splice(index, 1); // Eliminar la carta del array
+        localStorage.setItem("usuarios", JSON.stringify(usuarios)); // Actualizar el localStorage
+        mostrarCartas(); // Refrescar la lista de cartas mostradas
+    }
+}
+
+// Añadir evento para cerrar el popup de cartas
 document.getElementById("cerrar-cartas").addEventListener("click", function() {
     document.getElementById("popup-cartas").style.display = "none";
 });
 
-// Función para borrar una carta
-function borrarCarta(index) {
-    let cartas = JSON.parse(localStorage.getItem("cartas")) || [];
-    cartas.splice(index, 1);
-    localStorage.setItem("cartas", JSON.stringify(cartas));
-    mostrarCartas();
-}
 
 // Funciones Drag and Drop
 let draggedElement = null;
