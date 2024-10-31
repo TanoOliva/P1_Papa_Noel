@@ -5,9 +5,9 @@ let tiempoRestante = 90;
 let intervalo;
 
 const adivinanzas = [
-    { pregunta: "¿Qué es blanco por fuera, amarillo por dentro?", respuesta: "plátano" },
-    { pregunta: "¿Qué viene una vez en un minuto, dos veces en un momento, pero nunca en mil años?", respuesta: "la letra m" },
-    { pregunta: "¿Qué tiene patas y no camina?", respuesta: "la mesa" }
+    { pregunta: "Una vieja con un diente que llama a toda la gente.", respuesta: "la campana" },
+    { pregunta: "Con la nieve se hace y el sol lo deshace", respuesta: "Muñeco de nieve" },
+    { pregunta: "Al compás de las campanadas de medianoche, comemos una tras otra hasta llegar a doce. ¿Que es?", respuesta: "la uva" }
 ];
 
 document.getElementById("juegoClick").addEventListener("click", iniciarJuegoClickTheCircle);

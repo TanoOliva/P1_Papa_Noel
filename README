@@ -11,6 +11,17 @@ Descripción:
     --> Home: Página de inicio el cual de forma intuitiva y de manera sensilla
               muestra cuántos días faltan para Navidad.
 
+            --> Sección de "Cuenta regresiva" que muestra cuántos días faltan
+                para Navidad.
+
+            --> Inicio de sesión: Permite a los usuarios iniciar sesion
+            --> Registro: Permite a los usuarios registrarse en la plataforma
+
+            --> Perfil: Permite a los usuarios ver su perfil, modificarlo, ver sus cartas enviadas y cerrar sesion
+                    --> Mi perfil: Permite a los usuarios ver y modificar su perfil
+                    --> Mis cartas: Permite a los usuarios ver las cartas enviadas, permite reordenarlas y eliminarlas
+                    --> Cerrar sesion: Permite a los usuarios cerrar sesion
+
     --> Papa Noel: 2da página la cual tiene en diferentes bloques, la historia
                    de papa noel y sus curiosidades, con imagenes y animaciones.
 
@@ -20,11 +31,12 @@ Descripción:
 
     --> Envia tu carta: 4ta página la cual consiste en un formulario para enviar
                         cartas a papa noel.
+            --> Formulario: Permite a los usuarios enviar cartas a papa noel
 
-    --> ¡Juega!: 5ta página la cual contiene tres juegos interactivos. uno de
-                 busqueda de un oso entre muchos hombre de nieve. una sopa
-                 de letras navideño y un memorice.
-
+    --> ¡Juega!: 5ta página la cual tiene diferentes juegos navideños para que
+                 los niños se diviertan.
+            --> Juego 1: Juego donde hay que superarse a uno mismo intentando clickear la mayor cantidad de veces la esfera navideña dentro de un minuto y medio
+            --> Juego 2: Juego en el cual hay que adivinar una serie de adivinanzas. Si se acierta se pasa a la siguiente adivinanza, si se falla se pierde.
 Instrucciones:
 
 --> No se requiere ninguna instalación previa de algún software.
@@ -46,6 +58,7 @@ Declaración de IA:
                relacionados a la historia de Papá Noel y cartas escritas por niños de
                diferentes paises.
 
+--> 3. juegos: Se utilizó la ayuda de una inteligencia artificial, para crear el codigo del juego de las adivinanzas.
 
 
 
