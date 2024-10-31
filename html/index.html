@@ -133,14 +133,11 @@
         <div id="popup-cartas" class="popup-registro" style="display: none;">
             <div class="popup-content">
                 <h2>Mis Cartas</h2>
-                <div id="cartas-container" class="cartas-recibidas">
-                    <!-- Aquí se mostrarán las cartas o el mensaje de no hay cartas -->
-                </div>
+                <div id="cartas-container" class="cartas-recibidas"></div>
                 <button id="cerrar-cartas">Cerrar</button>
             </div>
         </div>
         
-
         <script src="/script/inicio-registro.js"></script>
         <script src="/script/perfil.js"></script>
         
@@ -331,15 +328,13 @@
                     <h3>ENVIA TU CARTA A PAPÁ NOEL</h3>
                     <h4>Se la enviaremos enseguida</h4>
         
-                    <!-- Añadir id al formulario para referenciarlo en el script -->
                     <form id="form-enviar-carta" enctype="multipart/form-data">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre-carta" name="nombre" required>
         
                         <label for="edad">Edad:</label>
                         <input type="number" id="edad-carta" name="edad" min="1" max="100" required>
-        
-                        <!-- Actualizamos el id y name del correo -->
+
                         <label for="correo-carta">Correo electrónico:</label>
                         <input type="email" id="correo-carta" name="correo-carta" required>
         
@@ -369,7 +364,7 @@
                 <div class="menu-juegos">
                     <button id="juegoClick">Click The Circle</button>
                     <button id="juegoAdivina">Adivinanza Navideña</button>
-                    <button id="juegoImagen2">SinImplementar</button>
+                    <button id="juego3">Juego Invisible</button>
                 </div>
                 <div class="contenedor-juego" id="contenedor-juego">
                     <img class="imagen-juego" src="/images/flecha.webp" alt="Encuentra al Oso Polar">

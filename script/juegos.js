@@ -58,43 +58,36 @@ function iniciarJuegoClickTheCircle() {
 
 
 function iniciarJuegoAdivina() {
-    contenedorJuego.innerHTML = ""; // Limpiar el contenedor del juego
+    contenedorJuego.innerHTML = ""; 
 
-    // Inicializar variables
     let intentosRestantes = 3;
     let adivinanzaActual = adivinanzas[Math.floor(Math.random() * adivinanzas.length)];
 
-    // Mostrar la adivinanza en el HTML
     const adivinanzaElement = document.createElement("p");
     adivinanzaElement.textContent = adivinanzaActual.pregunta;
     contenedorJuego.appendChild(adivinanzaElement);
 
-    // Crear un campo de texto para ingresar la respuesta
     const inputRespuesta = document.createElement("input");
     inputRespuesta.type = "text";
     inputRespuesta.placeholder = "Escribe tu respuesta aquí";
     contenedorJuego.appendChild(inputRespuesta);
 
-    // Crear botón para enviar respuesta
     const botonEnviar = document.createElement("button");
     botonEnviar.textContent = "Enviar Respuesta";
     contenedorJuego.appendChild(botonEnviar);
 
-    // Elemento para mostrar intentos restantes
     const intentosElement = document.createElement("p");
     intentosElement.textContent = `Intentos restantes: ${intentosRestantes}`;
     contenedorJuego.appendChild(intentosElement);
 
-    // Elemento para mostrar el resultado
     const resultadoElement = document.createElement("p");
     contenedorJuego.appendChild(resultadoElement);
 
-    // Manejar el envío de la respuesta
     botonEnviar.addEventListener("click", () => {
         const respuestaUsuario = inputRespuesta.value.trim().toLowerCase();
         if (respuestaUsuario === adivinanzaActual.respuesta) {
             resultadoElement.textContent = "¡Correcto! Has adivinado la respuesta.";
-            inputRespuesta.disabled = true; // Deshabilitar el input si es correcto
+            inputRespuesta.disabled = true; 
         } else {
             intentosRestantes--;
             if (intentosRestantes > 0) {
@@ -102,12 +95,11 @@ function iniciarJuegoAdivina() {
                 intentosElement.textContent = `Intentos restantes: ${intentosRestantes}`;
             } else {
                 resultadoElement.textContent = `¡Has perdido! La respuesta era: ${adivinanzaActual.respuesta}`;
-                inputRespuesta.disabled = true; // Deshabilitar el input si se acabaron los intentos
+                inputRespuesta.disabled = true; 
             }
         }
-        inputRespuesta.value = ""; // Limpiar el campo de entrada
+        inputRespuesta.value = ""; 
     });
 
-    // Mostrar el contenedor del juego de adivinanza
     document.getElementById("juegoAdivinanza").style.display = "block";
 }
